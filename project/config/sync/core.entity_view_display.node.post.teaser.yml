@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.post.body
     - field.field.node.post.field_categoria_de
     - field.field.node.post.field_cmts
+    - field.field.node.post.field_componentes
     - field.field.node.post.field_en
     - field.field.node.post.field_imagen_del_post
     - field.field.node.post.field_palabr
@@ -35,6 +36,7 @@ content:
 hidden:
   field_categoria_de: true
   field_cmts: true
+  field_componentes: true
   field_en: true
   field_imagen_del_post: true
   field_palabr: true

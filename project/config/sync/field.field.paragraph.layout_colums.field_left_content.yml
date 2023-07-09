@@ -1,0 +1,37 @@
+uuid: b35bf5ad-25ee-4833-bd64-7e1cfe96957a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_left_content
+    - paragraphs.paragraphs_type.layout_colums
+    - paragraphs.paragraphs_type.tittle_text_cta
+  module:
+    - entity_reference_revisions
+id: paragraph.layout_colums.field_left_content
+field_name: field_left_content
+entity_type: paragraph
+bundle: layout_colums
+label: 'left content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tittle_text_cta: tittle_text_cta
+    negate: 0
+    target_bundles_drag_drop:
+      cta:
+        weight: 4
+        enabled: false
+      layout_colums:
+        weight: 5
+        enabled: false
+      tittle_text_cta:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

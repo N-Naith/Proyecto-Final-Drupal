@@ -1,18 +1,27 @@
-uuid: 74f60e66-92b6-41fa-9f82-9bdbe9c7e7b8
+uuid: 2370224b-92e8-49fb-8260-25ba7454e5ec
 langcode: en
 status: true
 dependencies:
   module:
+    - options
     - paragraphs
 id: paragraph.field_color
 field_name: field_color
 entity_type: paragraph
-type: string
+type: list_string
 settings:
-  max_length: 7
-  case_sensitive: false
-  is_ascii: false
-module: core
+  allowed_values:
+    -
+      value: default
+      label: 'Default display (transparent)'
+    -
+      value: orange
+      label: 'Orange background'
+    -
+      value: blue
+      label: 'Blue background'
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

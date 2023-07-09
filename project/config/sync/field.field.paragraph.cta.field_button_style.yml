@@ -1,4 +1,4 @@
-uuid: 198722ec-6df7-43b6-a4b8-f1c0e0e586f5
+uuid: 949bd65d-04c7-427a-a291-cbbf3bee8a07
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: paragraph.cta.field_button_style
 field_name: field_button_style
 entity_type: paragraph
 bundle: cta
-label: 'Button Style'
+label: 'button style'
 description: ''
 required: true
 translatable: false

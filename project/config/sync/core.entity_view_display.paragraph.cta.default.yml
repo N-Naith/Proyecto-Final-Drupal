@@ -1,10 +1,10 @@
-uuid: 9145857f-ba39-498f-9cf2-b20ad08f8fcf
+uuid: 0ccb3612-cdd0-4670-ad79-0c3a74013545
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.cta.field_button_style
-    - field.field.paragraph.cta.field_ctalink
+    - field.field.paragraph.cta.field_link
     - paragraphs.paragraphs_type.cta
   module:
     - link
@@ -21,7 +21,7 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_ctalink:
+  field_link:
     type: link
     label: hidden
     settings:

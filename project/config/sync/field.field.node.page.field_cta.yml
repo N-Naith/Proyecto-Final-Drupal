@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_cta
     - node.type.page
-    - paragraphs.paragraphs_type.title_text_cta
-    - paragraphs.paragraphs_type.two_colums_content
   module:
     - entity_reference_revisions
 id: node.page.field_cta
@@ -22,9 +20,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles:
-      title_text_cta: title_text_cta
-      two_colums_content: two_colums_content
+    target_bundles: {  }
     negate: 0
     target_bundles_drag_drop:
       title_text_cta:

@@ -1,4 +1,4 @@
-uuid: 229a269a-18d0-482f-a186-edc1d730a397
+uuid: 2e4d77fc-99d5-4a82-a988-d36f5d38d7ca
 langcode: en
 status: true
 dependencies:
@@ -19,7 +19,7 @@ settings:
       label: 'Button with arrow icon'
     -
       value: outlined
-      label: 'Outlined Button'
+      label: 'Outlined button'
   allowed_values_function: ''
 module: options
 locked: false

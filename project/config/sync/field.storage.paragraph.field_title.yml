@@ -1,4 +1,4 @@
-uuid: 0001593d-f339-476c-a7df-a0f5e59b27b6
+uuid: be58c09a-6d6b-472a-af13-29d41a7ab5c3
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ field_name: field_title
 entity_type: paragraph
 type: string
 settings:
-  max_length: 20
+  max_length: 255
   case_sensitive: false
   is_ascii: false
 module: core

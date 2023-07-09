@@ -1,10 +1,10 @@
-uuid: 27a24afd-4484-412b-8f1d-a9aedfc1ff83
+uuid: 07e44b23-aad7-45e3-b35a-d03ce79b457b
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.cta.field_button_style
-    - field.field.paragraph.cta.field_ctalink
+    - field.field.paragraph.cta.field_link
     - paragraphs.paragraphs_type.cta
   module:
     - link
@@ -19,7 +19,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_ctalink:
+  field_link:
     type: link_default
     weight: 0
     region: content

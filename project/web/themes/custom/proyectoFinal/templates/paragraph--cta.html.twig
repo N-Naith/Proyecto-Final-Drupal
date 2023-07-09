@@ -51,8 +51,8 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       {{ pattern('button', {
-        text: paragraph.field_ctalink.0.value.title,
-        url: paragraph.field_ctalink.0.value.uri,
+        text: paragraph.field_link.0.value.title,
+        url: paragraph.field_link.0.value.uri,
       }, paragraph.field_button_style.0.value) }}
     {% endblock %}
   </div>

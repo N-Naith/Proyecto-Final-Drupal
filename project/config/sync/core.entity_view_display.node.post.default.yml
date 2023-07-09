@@ -7,12 +7,14 @@ dependencies:
     - field.field.node.post.body
     - field.field.node.post.field_categoria_de
     - field.field.node.post.field_cmts
+    - field.field.node.post.field_componentes
     - field.field.node.post.field_en
     - field.field.node.post.field_imagen_del_post
     - field.field.node.post.field_palabr
     - node.type.post
   module:
     - comment
+    - entity_reference_revisions
     - text
     - user
 id: node.post.default
@@ -35,6 +37,15 @@ content:
       pager_id: 0
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_componentes:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_imagen_del_post:
     type: entity_reference_entity_view

@@ -1,4 +1,4 @@
-uuid: 2af30dcd-143c-4a74-9868-16aff1176288
+uuid: 01ceebda-e00e-4be4-8174-465036c203af
 langcode: en
 status: true
 dependencies: {  }
@@ -6,5 +6,5 @@ id: cta
 label: CTA
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'call to actions'
 behavior_plugins: {  }

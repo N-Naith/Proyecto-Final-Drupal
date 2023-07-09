@@ -1,4 +1,4 @@
-uuid: 62761d85-170a-4803-b22b-e8f5169cfb29
+uuid: 5ccbd9df-57f2-4e37-bf1a-2f1e92334151
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ settings:
   target_type: paragraph
 module: entity_reference_revisions
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
