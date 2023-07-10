@@ -1,0 +1,23 @@
+uuid: 93dac667-245a-407c-8cd6-8e06a4620604
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_color
+    - paragraphs.paragraphs_type.cart_button
+  module:
+    - options
+id: paragraph.cart_button.field_cta_color
+field_name: field_cta_color
+entity_type: paragraph
+bundle: cart_button
+label: cta_color
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: veriperi
+default_value_callback: ''
+settings: {  }
+field_type: list_string

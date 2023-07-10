@@ -1,0 +1,19 @@
+uuid: 43a70422-071c-43a3-9e3f-727929840f00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto
+    - paragraphs.paragraphs_type.cart
+id: paragraph.cart.field_texto
+field_name: field_texto
+entity_type: paragraph
+bundle: cart
+label: texto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

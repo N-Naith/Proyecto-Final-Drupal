@@ -1,0 +1,33 @@
+cta: 
+  label: 'CTA'
+  description: 'CTA component'
+  variants:
+    default:
+      label: Default CTA
+      variant: veriperi
+    veriperi:
+      label: veriperi CTA
+      description: CTA with veriperi Background
+    lila: 
+      label: lila CTA
+      description: CTA with lila Background
+    violeta:
+      label: violeta CTA
+      description: CTA with violetta Background
+  fields:
+      text:
+        type: string
+        label: CTA text
+        description: CTA's text.
+        preview: 'Ingresar'
+      url:
+        type: url
+        label: URL
+        description: URL that user will be redirected to.
+        preview: https://www.instagram.com/
+  libraries:
+    -
+      cta:
+        css:
+          component:
+            css/style.css: {}

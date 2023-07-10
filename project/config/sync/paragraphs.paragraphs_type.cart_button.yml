@@ -1,0 +1,10 @@
+uuid: 036f0ff6-1a41-493f-9d71-37f4f762ec8d
+langcode: en
+status: true
+dependencies: {  }
+id: cart_button
+label: cart_button
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

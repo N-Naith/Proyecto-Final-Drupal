@@ -1,0 +1,36 @@
+.cart.cart__component{
+    
+
+    padding: 1rem;
+}
+
+.cart.cart__component--veriperi{
+    background-color: #6868ac;
+    color: white;
+}
+.cart.cart__component--lila{
+    background-color: #9774b2;
+    color: white;
+}
+
+.cart.cart__component--violeta{
+    background-color: #4c0080;
+    color: white;
+}
+
+.cart__component h5.cart__title{
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.cart__component--veriperi h5.cart__title,
+.cart__component--lila h5.cart__title{
+    color: white;
+}
+
+.cart.cart__component .cart__cta{
+    padding: 2em 0;
+    text-align: right;
+}
+
+

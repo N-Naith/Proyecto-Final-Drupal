@@ -1,0 +1,27 @@
+.cta{
+    background-color: #8000FF;
+    padding: 1em 2em;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 70px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.cta:hover{
+    background-color: white;
+    color: #505858;
+    border: 1px #5e6666 solid;
+}
+
+.cta--veriperi{
+    background-color: #6868ac;
+}
+
+.cta--lila{
+    background-color: #9774b2;
+}
+
+.cta--violeta{
+    background-color: #4c0080;
+}

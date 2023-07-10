@@ -1,0 +1,32 @@
+uuid: 716c62c5-93af-48f4-af24-9a86414cab6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cart_button.field_cta_color
+    - field.field.paragraph.cart_button.field_cta_link
+    - paragraphs.paragraphs_type.cart_button
+  module:
+    - link
+id: paragraph.cart_button.default
+targetEntityType: paragraph
+bundle: cart_button
+mode: default
+content:
+  field_cta_color:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_cta_link:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

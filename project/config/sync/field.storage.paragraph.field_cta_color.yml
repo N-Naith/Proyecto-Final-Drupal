@@ -1,0 +1,30 @@
+uuid: b8995906-b70b-4431-ade0-bf0fa3b0cb17
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_cta_color
+field_name: field_cta_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: veriperi
+      label: 'Color Veriperi'
+    -
+      value: lila
+      label: 'Color Lila'
+    -
+      value: violeta
+      label: 'Color Violeta'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

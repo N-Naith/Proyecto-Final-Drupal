@@ -1,0 +1,50 @@
+uuid: a88a8ac7-9271-4243-99a4-8214fa8c1df5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cart.field_cart_cta
+    - field.field.paragraph.cart.field_lista
+    - field.field.paragraph.cart.field_texto
+    - field.field.paragraph.cart.field_titulo
+    - paragraphs.paragraphs_type.cart
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.cart.default
+targetEntityType: paragraph
+bundle: cart
+mode: default
+content:
+  field_cart_cta:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_lista:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_texto:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_titulo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

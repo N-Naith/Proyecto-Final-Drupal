@@ -1,0 +1,23 @@
+uuid: d07e5109-9ff0-4900-9759-7a748f5d6b51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lista
+    - paragraphs.paragraphs_type.cart
+  module:
+    - options
+id: paragraph.cart.field_lista
+field_name: field_lista
+entity_type: paragraph
+bundle: cart
+label: lista
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: veriperi
+default_value_callback: ''
+settings: {  }
+field_type: list_string

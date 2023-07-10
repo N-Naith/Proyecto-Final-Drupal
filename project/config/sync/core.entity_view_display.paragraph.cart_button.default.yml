@@ -1,0 +1,36 @@
+uuid: 45d1c24c-645a-45b6-be66-6d1ab6f54245
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cart_button.field_cta_color
+    - field.field.paragraph.cart_button.field_cta_link
+    - paragraphs.paragraphs_type.cart_button
+  module:
+    - link
+    - options
+id: paragraph.cart_button.default
+targetEntityType: paragraph
+bundle: cart_button
+mode: default
+content:
+  field_cta_color:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_cta_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
