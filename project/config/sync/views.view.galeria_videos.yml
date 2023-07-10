@@ -1,22 +1,21 @@
-uuid: f138ef40-3ffe-4b41-b695-17eda3f5c2ed
+uuid: 5421744b-104a-4ee4-b8e3-8ecd563fafc5
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.media_library
-    - field.storage.media.field_media_oembed_video
-    - media.type.video
+    - core.entity_view_mode.node.full
+    - node.type.video
     - system.menu.main
   module:
-    - media
+    - node
     - user
-id: galeria_de_videos
-label: 'Galería de Videos'
+id: galeria_videos
+label: 'Galeria de videos'
 module: views
 description: ''
 tag: ''
-base_table: media_field_data
-base_field: mid
+base_table: node_field_data
+base_field: nid
 display:
   default:
     id: default
@@ -24,17 +23,17 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Galería de Videos'
+      title: 'Galeria de videos'
       fields:
-        name:
-          id: name
-          table: media_field_data
-          field: name
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: media
-          entity_field: media
+          entity_type: node
+          entity_field: title
           plugin_id: field
           label: ''
           exclude: false
@@ -73,74 +72,11 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_media_oembed_video:
-          id: field_media_oembed_video
-          table: media__field_media_oembed_video
-          field: field_media_oembed_video
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
       pager:
         type: mini
         options:
           offset: 0
-          items_per_page: 10
+          items_per_page: 9
           total_pages: null
           id: 0
           tags:
@@ -167,47 +103,57 @@ display:
       access:
         type: perm
         options:
-          perm: 'view media'
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
       empty: {  }
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
       arguments: {  }
       filters:
         status:
           id: status
-          table: media_field_data
+          table: node_field_data
           field: status
-          entity_type: media
+          entity_type: node
           entity_field: status
           plugin_id: boolean
           value: '1'
           group: 1
           expose:
             operator: ''
-        bundle:
-          id: bundle
-          table: media_field_data
-          field: bundle
-          entity_type: media
-          entity_field: bundle
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
           plugin_id: bundle
           value:
             video: video
       style:
         type: grid_responsive
-        options:
-          uses_fields: false
-          columns: 6
-          cell_min_width: 100
-          grid_gutter: 10
-          alignment: horizontal
       row:
-        type: 'entity:media'
+        type: 'entity:node'
         options:
           relationship: none
-          view_mode: media_library
+          view_mode: full
       query:
         type: views_query
         options:
@@ -226,9 +172,9 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.media.field_media_oembed_video'
+      tags: {  }
   page_1:
     id: page_1
     display_title: Page
@@ -236,11 +182,11 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: galer-a-de-videos
+      path: galeria-de-videos
       menu:
         type: normal
-        title: 'Galería de Videos'
-        enabled: false
+        title: 'Galeria de videos'
+        enabled: true
         menu_name: main
         parent: ''
     cache_metadata:
@@ -249,6 +195,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.media.field_media_oembed_video'
+      tags: {  }
